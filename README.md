@@ -15,21 +15,23 @@ Questions are welcome and expected.
 
 1.DoThisFirst
 
-	The Program.cs file contains a comments section that describe what we expect.
-	This is a very easy exercise that should be something you can do in less than an hour.
-	Obviously, do this one first.
+- The Program.cs file contains a comments section that describe what we expect.
+- This is a very easy exercise that should be something you can do in less than an hour.
+- Obviously, do this one first.
 
 2.DoThisNext
-	Again, the Program.cs file contains a comments section that describe what we expect.
-	This project is a little more challenging, but should be something you can do in a few hours.
+
+- Program.cs file contains a comments section that describe what we expect.
+- This project is a little more challenging, but should be something you can do in a few hours.
 
 3.BonusChallenge
-	This has a readme file at the root of the project with further instructions and requirements.  
-	This is a more difficult challenge - as such, it is optional.
-	Feel free to submit a partially complete project - as long as we can debug, its fine.
+
+- This has a readme file at the root of the project with further instructions and requirements.  
+- This is a more difficult challenge - as such, it is optional.
+- Feel free to submit a partially complete project - as long as we can debug, its fine.
 
 
-When you are done, create a pull request here on GitHub.  :)
+When you are done, create a pull request.  :)
 
 Please send it in at least 24 hours before your Technical interview so that we have time to review it.
 
