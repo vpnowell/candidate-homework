@@ -40,8 +40,8 @@ This will be due at the start of the technical interview.
 
 ## How to complete the homework
 
-1 - Fork this into a repository on your GitHub account (it's free)
-2 - Do the assignments and commit/push to your public repository (make sure its public!)
-3 - Send us the url to clone your repo
+- Fork this into a repository on your GitHub account (it's free)
+- Do the assignments and commit/push to your public repository (make sure its public!)
+- Send us the url to clone your repo
 
 Ideally, we want this done at least 24 hours before the technical interview, so we can address any issues that come up.
