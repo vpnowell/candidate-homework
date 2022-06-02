@@ -38,12 +38,10 @@ This will be due at the start of the technical interview.
 
 
 
-## How to submit your work
+## How to complete the homework
 
-
-
-- Fork this into a public repository on your GitHub account
-- Do the assignments and commit/push
-- Send us the url to clone your fork
+1 - Fork this into a repository on your GitHub account (it's free)
+2 - Do the assignments and commit/push to your public repository (make sure its public!)
+3 - Send us the url to clone your repo
 
 Ideally, we want this done at least 24 hours before the technical interview, so we can address any issues that come up.
