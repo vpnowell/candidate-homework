@@ -10,9 +10,9 @@ namespace _1.WarmUp.Easy
              
                Write code that meets the following requirements:
                    - loops through all integers from 1 to 100 and prints to the console according to the following rules
-                       - where the integer is a multiple of 3, the console prints the word 'Fizz'
-                       - where the integer is a multiple of 5, the console prints the word 'Buzz' 
-                       - where the integer is a multiple of both 3 and 5, the console prints the words 'Fizz Buzz'
+                       - where the integer is a multiple of 3, the console prints the word 'Sockeye'
+                       - where the integer is a multiple of 5, the console prints the word 'Consulting' 
+                       - where the integer is a multiple of both 3 and 5, the console prints the words 'Sockeye Consulting'
                        - otherwise the console simply prints the integer value
               
              
@@ -20,9 +20,9 @@ namespace _1.WarmUp.Easy
              
                    1
                    2
-                   Fizz
+                   Sockeye
                    4
-                   Buzz
+                   Consulting
 
                Please do this work yourself - you should be able to do this easily without any 3rd party libraries
              
