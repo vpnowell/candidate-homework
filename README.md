@@ -1,6 +1,6 @@
 ## Intro
 
-This solution was created in Visual Studio 2022.  
+This solution was created in Visual Studio 2022 on a windows PC.  
 
 You should be able to use VS 2022 Community (free version) to complete the work.
 
@@ -8,15 +8,15 @@ Older versions of Visual Studio are not advised.
 
 The projects in the solution are ordered by difficulty.
 
-The intent behind these tasks is to provide you with different levels of difficulty where you can showcase your skills, experience, and style.
-
-We will use your solutions to these problems as talking points in the technical interview.
-
-We expect and trust you to do this work yourself.  
+We expect and trust you to do this work yourself. 
 
 Questions are welcome and expected.
 
-This will be due at the start of the technical interview.
+Ideally, we want this done before the technical interview, so we can address any questions that come up.  
+
+The intent behind these tasks is to provide you with different levels of difficulty where you can showcase your skills, experience, and style.
+
+This is not scored, and we may or may not discuss it during the interview.  We just use it to get to know you within the context of some code.
 
 
 ## Assignments
@@ -28,20 +28,24 @@ This will be due at the start of the technical interview.
 - Obviously, do this one first.
 
 ### 2.DoThisNext
-- Again, the Program.cs file contains a comments section that describe what we expect.
-- This project is a little more challenging, but should be something you can do in a few hours.
+- Again, the Program.cs file contains a comments section that describes what we expect.
+- This project is more challenging, but should be something you can do in a few hours.
+- Please make sure you read the requirements in the comments section.
+- Ask questions if you need clarification.
 
 ### 3.BonusChallenge
 - This has a readme file at the root of the project with further instructions and requirements.  
 - This is a more difficult challenge - as such, it is optional.
-- Feel free to submit a partially complete project - as long as we can debug, its fine.
+- It was done in .Net framework, but you want to change to .Net Core, that is fine also.
+- Feel free to submit a partially complete project - as long it comnpiles and can be stepped through in the debugger, it is fine.
 
 
 
 ## How to complete the homework
 
-- Clone this into a repository name-candidate-homework on your GitHub account (where name is your name or github user)
+- Clone this into a repository on your GitHub account
 - Do the assignments and commit/push to your public repository (make sure its public!)
 - Send us the url to clone your repo
 
-Ideally, we want this done at least 24 hours before the technical interview, so we can address any issues that come up.
+## After the interview
+- Feel free to delete your clone (or do with it what you wish)
