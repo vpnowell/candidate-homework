@@ -30,19 +30,20 @@ What you need to do (at a minimum):
 				- should display the list of lists in the same fashion and using the same requiremnts found in the 2.ThenDoThis project - feel free to style this with CSS as you see fit
 				- you can do final sorting here using Razor or javascript/jquery if you want
 
-		- you can add whatever methods and new classes you need.  Feel free to use this as an opportunity to showcase your skill in writing clean, readable, reusable code
-		- demonstrating your skills with SOLID principles is a huge plus!
+You can add whatever methods and new classes you need.  Feel free to use this as an opportunity to showcase your skill in writing clean, readable, reusable code
 
-	Feel free to copy in your code from 2.ThenDoThis to get started, because this challenge is not about the sorting - you already did that.  
-	Rather, this challenge is about showing us your skills in working with an MVC project
+Demonstrating your skills with SOLID principles is a huge plus!
 
-	There is no expectation or requirement as to how the UI should look - completely up to you.
+Feel free to copy in your code from 2.ThenDoThis to get started, because this challenge is not about the sorting - you already did that.  
+Rather, this challenge is about showing us your skills in working with an MVC project
 
-	You can accomplish this in many ways - we leave that up to you.  Show us your ideas!
+There is no expectation or requirement as to how the UI should look - completely up to you.
 
-	If you have time, feel free to add behaviors to the view to make it more functional (like sorting) and to demonstrate your skills with client-side code
+You can accomplish this in many ways - we leave that up to you.  Show us your ideas!
 
-	Also feel free to tweak the css to make it look the way you want - show us your ideas on how a clean, professional web page should look!
+If you have time, feel free to add behaviors to the view to make it more functional (like sorting) and to demonstrate your skills with client-side code
 
-	You can also add/remove/modify any of the code that is present to make the site look or behave the way you want.  This is your chance to shine!
+Also feel free to tweak the css to make it look the way you want - show us your ideas on how a clean, professional web page should look!
+
+You can also add/remove/modify any of the code that is present to make the site look or behave the way you want.  This is your chance to shine!
 
