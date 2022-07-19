@@ -1,6 +1,6 @@
 ## Intro
 
-This solution was created in Visual Studio 2022 on a windows PC.  
+This solution was created in Visual Studio 2022 on a Windows PC.  
 
 You should be able to use VS 2022 Community (free version) to complete the work.
 
@@ -36,7 +36,7 @@ This is not scored, and we may or may not discuss it during the interview.  We j
 ### 3.BonusChallenge
 - This has a readme file at the root of the project with further instructions and requirements.  
 - This is a more difficult challenge - as such, it is optional.
-- It was done in .Net framework, but you want to change to .Net Core, that is fine also.
+- It was done in .Net framework, but if you want to change to .Net Core, that is fine also.
 - Feel free to submit a partially complete project - as long it comnpiles and can be stepped through in the debugger, it is fine.
 
 
