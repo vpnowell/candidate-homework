@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 0;
     font-family: "arial";
     color: #00000f;
     background-color: #fffffe;
@@ -9,5 +9,9 @@
 .body-content {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.btn.btn-light[disabled] {
+    background-color: #a0a0a0;
 }
 
