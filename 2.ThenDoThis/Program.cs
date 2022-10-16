@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _2.Puzzle.Medium
 {
@@ -54,21 +55,21 @@ namespace _2.Puzzle.Medium
              *  You can do this challenge without using any 3rd party libraries - remember - we want to see YOUR work
              */
 
-
+            
             foreach (var list in Output(Resource.SimpleList))
             {
-                Console.WriteLine(string.Join(",", list));
+                Console.WriteLine(string.Join(", ", list));
             }
-
+            
             Console.WriteLine("\r\n\r\nSimpleList complete.\r\n");
 
             foreach (var list in Output(Resource.HarderList))
             {
-                Console.WriteLine(string.Join(",", list));
+                Console.WriteLine(string.Join(", ", list));
             }
 
             Console.WriteLine("\r\n\r\nHarderList complete.\r\n\r\n");
-
+            
         }
 
         static IEnumerable<IEnumerable<string>> Output(IEnumerable<string> input)
@@ -77,7 +78,34 @@ namespace _2.Puzzle.Medium
 
             // YOUR CODE GOES HERE
 
-            return output;
+            foreach (var item in input)
+            {
+                //Don't create a string list entry for a null or empty string or one that's just whitespace
+                if (String.IsNullOrWhiteSpace(item)) 
+                    continue; 
+
+                List<string> list = new List<string>();
+                list.Add(item.Trim());
+
+                foreach (var item2 in input)
+                    if (!String.IsNullOrWhiteSpace(item2) && !item.Equals(item2) && IsAnagram(item, item2)) 
+                        //Add this word to the list only if the list doesn't already contain the word
+                        if (!list.Any(x => x.Contains(item2.Trim())))
+                            list.Add(item2.Trim());
+
+                list.Sort();
+                output.Add(list);
+            }
+
+            return (output.GroupBy(l => l[0]).Select(g => g.FirstOrDefault()).OrderBy(l => l[0]).ToList());
         }
-    }
+
+        static bool IsAnagram (string word1, string word2)
+        {
+            word1 = String.Concat(word1.Replace(" ", string.Empty).ToLower().OrderBy(ch => ch));
+            word2 = String.Concat(word2.Replace(" ", string.Empty).ToLower().OrderBy(ch => ch));
+
+            return (word1.Equals(word2));  
+        }
+    } 
 }
