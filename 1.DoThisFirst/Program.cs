@@ -30,8 +30,10 @@ namespace _1.WarmUp.Easy
 
             // YOUR CODE GOES HERE :)
 
+            for (int i = 1; i <= 100; i++)
+                Console.WriteLine((i % 15 == 0) ? "Sockeye Consulting" : (i % 3 == 0) ? "Sockeye" : (i % 5 == 0) ? "Consulting" : i.ToString());
 
-
+            
             Console.WriteLine("\r\n\r\nCompleted -- Press any key to quit");
 
 
