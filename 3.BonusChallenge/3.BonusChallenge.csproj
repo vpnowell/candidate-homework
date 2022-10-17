@@ -137,6 +137,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\AnagramallyLogo.png" />
     <Content Include="Images\AnagramallyLogo2.png" />
+    <Content Include="Images\AnagramallyLogo3.png" />
     <Content Include="Images\Letters1.jpg" />
     <Content Include="Images\Letters2.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
