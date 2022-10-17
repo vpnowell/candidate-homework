@@ -15,25 +15,23 @@ namespace _3.BonusChallenge_1.Controllers
 
         public ActionResult Results(string wordList, string id)
         {
-            if (id == null) id = "input";
-
             List<string> inputList = new List<string>();
+            AnagramVM anagramVM = new AnagramVM();
 
             if (id == "list1" || id == "list2")
             {
                 Resource resource = new Resource();
                 inputList = (id == "list1") ? resource.SimpleList.ToList() : resource.HarderList.ToList();
-                var output = (List<List<string>>)Output(inputList);
-
-            } else
+                anagramVM.OutputList = (List<List<string>>)Output(inputList);
+            } 
+            else
             {
                 if (wordList != null && wordList.Length > 0)
+                {
                     inputList = wordList.Split(',').ToList();
-
-                var output = (List<List<string>>)Output(inputList);
+                    anagramVM.OutputList = (List<List<string>>)Output(inputList);
+                }
             }
-
-            AnagramVM anagramVM = new AnagramVM();
             anagramVM.InputList = inputList;
 
             return View(anagramVM);

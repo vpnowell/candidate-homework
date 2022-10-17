@@ -41,7 +41,50 @@
                 </p>
 
                 <h3 class="h3 mt-4">Anagram List:</h3>
-
+                @if (Model != null && Model.OutputList != null)
+                {
+                    <div class="container text-center text-black bg-white">
+                        <div class="text-center col-md mx-auto bg-white">
+                            <div class="row">
+                                <table class="table rounded bg-dark text-white table-striped">
+                                    <tr class="bg-secondary text-center">
+                                        <th class="bg-info text-center">Word/Phrase</th>
+                                        <th class="bg-info text-center">Anagram(s)</th>
+                                    </tr>
+                                    @{int outListCount = Model.OutputList.Count;}
+                                    @for (int i = 0; i < outListCount; i++)
+                                    {
+                                        <tr class="table-danger">
+                                           <td>@Model.OutputList[i][0]</td>
+                                           @if (Model.OutputList[i].Count > 1)
+                                           {
+                                              <td>
+                                               @{int firstItem = 0;}
+                                               @for (int j = 1; j < Model.OutputList[i].Count; j++)
+                                               {
+                                                  if (firstItem == 1)
+                                                  {
+                                                      @(", ")
+                                                  }
+                                                  else
+                                                  {
+                                                      firstItem = 1;
+                                                  }
+                                                  @Model.OutputList[i][j]
+                                               }
+                                              </td>
+                                            }
+                                            else
+                                            {
+                                               <td>&nbsp;</td>
+                                            }
+                                        </tr>
+                                    }
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
             <div class="row justify-content-center text-center">
 
