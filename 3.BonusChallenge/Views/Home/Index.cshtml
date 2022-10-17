@@ -1,7 +1,7 @@
-﻿@{
+﻿@model _3.BonusChallenge.ViewModel.AnagramVM
+@{
     ViewBag.Title = "Home Page";
 }
-
 
 <div class="jumbotron jumbotron-fluid full-width" style="margin-bottom: 0px;
     height: 90vh;
@@ -16,29 +16,25 @@
     width: 100vw;">
     <div class="container text-white">
         <h2 class="display-4 pt-5 text-white">Welcome to AnagramAlly!</h2>
-        <p class="lead">AnagramAlly is an app for finding anagrams in a list of words.</p>
+        <p class="lead">AnagramAlly is an app for finding anagrams in a list of words</p>
+        <p class="lead">Enter your words or phrases below, separated by commas, then click or tap Submit</p>
         <hr class="mt-lg-5" style="border-top: 3px solid white; color: white; background-color: white;">
+
         <div>
-            <form>
+            <form action="/Home/Results" method="post">
                 <div class="col text-center">
                     <h3 class="h3">Word List:</h3>
-                    <textarea class="form-control" id="wordList" rows="4" onkeyup="toggleSubmit()"></textarea>
+                    <textarea class="form-control" id="wordList" name="wordList" rows="4" onkeyup="toggleButtons()"></textarea>
 
                 </div>
-                <div class="row justify-content-center text-center" >
-                    <div class="col-lg-4" style="margin-top:20px;">
-                        <button class="btn btn-light btn-lg bg-info btn-outline-primary" " type="button" onclick="useList1()">Word List 1</button>
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-6" style="margin-top:20px;">
+                        <button class="btn btn-light btn-lg bg-info btn-outline-primary" type="button" id="btnClear" disabled onclick="clearForm()">Clear Form</button>
                     </div>
-                    <div class="col-lg-4" style="margin-top:20px;">
-                        <button class="btn btn-light btn-lg bg-info btn-outline-primary" type="button" onclick="useList2()">Word List 2</button>
-                    </div>
-                    <div class="col-lg-4" style="margin-top:20px;">
-                        <button class="btn btn-light btn-lg bg-info btn-outline-primary" type="button" onclick="clearForm()">Clear Form</button>
-                    </div>
-                </div>
 
-                <div class="col text-center" style="margin-top:20px;">
-                    <button class="btn btn-light btn-lg bg-success btn-outline-primary" type="button" id="btnSubmit" disabled>Submit</button>
+                    <div class="col-lg-6" style="margin-top:20px;">
+                        <button class="btn btn-light btn-lg bg-success btn-outline-primary" type="submit" id="btnSubmit" disabled>Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -57,10 +53,11 @@
             }
         };
 
-        function toggleSubmit() {
+        function toggleButtons() {
             var textBox = document.getElementById("wordList");
 
             document.getElementById("btnSubmit").disabled = (textBox.value.trim().length == 0);
+            document.getElementById("btnClear").disabled = (textBox.value.trim().length == 0);
         }
 
         function clearForm() {
@@ -73,33 +70,7 @@
                 }
             }
             textBox.value = "";
-            toggleSubmit();
-        }
-
-        function useList1() {
-            var textBox = document.getElementById("wordList");
-
-            if (textBox.value.length > 0) {
-
-                if (!confirm('Are you sure you want to overwrite all the words in the Word List?')) {
-                    return;
-                }
-            }
-            textBox.value = "Kyoto, London, Portland, Tokyo, Wichita, Donlon, Anchorage";
-            toggleSubmit();
-        }
-
-        function useList2() {
-            var textBox = document.getElementById("wordList");
-
-            if (textBox.value.length > 0) {
-
-                if (!confirm('Are you sure you want to overwrite all the words in the Word List?')) {
-                    return;
-                }
-            }
-            textBox.value = "care, team, Twelve plus One, folk, simple race, truth, race, real, meats, aloud, common, super, math, react, eleven plus two, care impels";
-            toggleSubmit();
+            toggleButtons();
         }
 
     </script>
