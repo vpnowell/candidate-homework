@@ -77,8 +77,9 @@ namespace _2.Puzzle.Medium
             var output = new List<List<string>>();
 
             // YOUR CODE GOES HERE
+            var myList = input.ToList();
 
-            foreach (var item in input)
+            foreach (var item in myList)
             {
                 //Don't create a string list entry for a null or empty string or one that's just whitespace
                 if (String.IsNullOrWhiteSpace(item)) 
@@ -87,7 +88,7 @@ namespace _2.Puzzle.Medium
                 List<string> list = new List<string>();
                 list.Add(item.Trim());
 
-                foreach (var item2 in input)
+                foreach (var item2 in myList)
                     if (!String.IsNullOrWhiteSpace(item2) && !item.Equals(item2) && IsAnagram(item, item2)) 
                         //Add this word to the list only if the list doesn't already contain the word
                         if (!list.Any(x => x.Contains(item2.Trim())))
